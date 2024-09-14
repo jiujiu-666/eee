@@ -28,7 +28,7 @@ fi
 
 download_elm(){
 echo "开始下载elm二进制文件到$PWD/elmsign目录"
-curl -# -o $PWD/elmsign/sign-$_ftype --create-dirs https://ghproxy.com/https://github.com/pingxian/elmsign/releases/download/v1.0.0/sign-$_ftype
+curl -# -o $PWD/elmsign/sign-$_ftype --create-dirs https://ghp.ci/https://github.com/pingxian/elmsign/releases/download/v1.0.0/sign-$_ftype
 echo "下载完成，如需重新下载或更新请先删除该文件"
 if [ -f "$PWD/elmsign/sign-$_ftype" ]; then
     echo "$PWD/elmsign/sign-$_ftype"
